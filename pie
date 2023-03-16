@@ -1,1 +1,24 @@
+public class PiDay {
 
+    // infinite series for π
+    // https://en.wikipedia.org/wiki/Pi#Rate_of_convergence
+    public static double piDay(int n, boolean subtract) {
+        double total = 0;
+        //Base case
+        for (n <= 1000) {
+            if (subtract == false) total += 4/n;
+            else total -= 4/n; 
+            
+        }
+    }
+
+    public static void main(String args[]) {
+        //  Gregory–Leibniz
+        //double pi = piDay(1, false);
+
+        // Nilakantha
+        double pi = 3.0 + piDay(3, false);
+
+        System.out.println("pi = " + pi);
+    }
+}
